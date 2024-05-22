@@ -1,0 +1,49 @@
+.f1xxl {
+  font: 600 128px "Montserrat";
+  text-transform: uppercase;
+}
+
+.f2xl0 {
+  font: 600 48px/1.25 "Jost";
+}
+
+.f2xl1 {
+  font: 400 48px/1.25 "Jost";
+}
+
+.f1xl {
+  font: 500 36px/44px "Montserrat";
+}
+
+.f1l {
+  font: 600 32px "Montserrat";
+  text-transform: uppercase;
+}
+
+.f3 {
+  font: 400 32px/1.375 "IBM Plex Serif";
+}
+
+.f1m {
+  font: 400 32px "Montserrat";
+}
+
+.f1s {
+  font: 400 24px/32px "Montserrat";
+}
+
+.f1xs0 {
+  font: 500 20px/1.6 "Montserrat";
+}
+
+.f1xs1 {
+  font: 400 20px/1.2 "Montserrat";
+}
+
+.f1xs2 {
+  font: 300 20px/1.2 "Montserrat";
+}
+
+.f1xxs {
+  font: 400 16px/1.25 "Montserrat";
+}
