@@ -47,3 +47,12 @@
 .f1xxs {
   font: 400 16px/1.25 "Montserrat";
 }
+
+@media (max-width: 1200px) {
+  .f1m {
+    font-size: 24px;
+  }
+  .f1xs1 {
+    font-size: 16px;
+  }
+}

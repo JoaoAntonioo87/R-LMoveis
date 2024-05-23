@@ -6,3 +6,6 @@
 @import "./referencias.css";
 @import "./tipografia.css";
 @import "./cores.css";
+@import "../components/header.css";
+@import "../components/container.css";
+@import "./reset.css";
