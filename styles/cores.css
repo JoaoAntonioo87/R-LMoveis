@@ -19,6 +19,9 @@
   --p7: #055b03;
   --p8: #002d07;
   --p9: #001804;
+  --grad0: linear-gradient(to bottom, var(--p2), var(--p4));
+  --grad1: linear-gradient(to bottom, var(--p6), var(--p8));
+  --grad2: linear-gradient(to bottom, var(--p4), var(--p6));
 }
 
 .c0 {
@@ -80,4 +83,13 @@
 }
 .p9 {
   color: #001804;
+}
+.grad0 {
+  background: linear-gradient(to bottom, var(--p2), var(--p4));
+}
+.grad1 {
+  background: linear-gradient(to bottom, var(--p6), var(--p8));
+}
+.grad2 {
+  background: linear-gradient(to bottom, var(--p4), var(--p6));
 }
