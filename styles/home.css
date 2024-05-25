@@ -3,7 +3,7 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.home-introducao > picture {
+.home-introducao-foto {
   z-index: 0;
 }
 .home-introducao-foto > img {
@@ -16,10 +16,11 @@
   justify-items: center;
   margin-top: 80px;
 }
-.home-introducao-texto h1 {
+
+h1 {
   position: relative;
 }
-.home-introducao-texto h1::after {
+h1::after {
   position: absolute;
   content: "";
   width: 80%;
@@ -28,6 +29,12 @@
   bottom: -2px;
   left: 10%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 600px) {
+  h1::after {
+    bottom: -6px;
+  }
 }
 
 .home-introducao-texto p {
@@ -42,4 +49,103 @@
   background: var(--grad0);
   border-radius: 5px;
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 800px) {
+  .home-introducao {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .home-introducao-foto {
+    display: none;
+  }
+  .home-introducao-texto {
+    margin-top: 32px;
+  }
+  .home-introducao-texto p {
+    max-width: 40ch;
+  }
+  .home-introducao-texto a {
+    margin-top: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-introducao-texto p {
+    max-width: 30ch;
+  }
+}
+
+.home-fotos {
+  display: grid;
+  justify-items: center;
+  padding-top: 120px;
+}
+
+.home-fotos > p {
+  align-self: center;
+  margin-top: 60px;
+  max-width: 960px;
+}
+
+.home-fotos > picture {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: start;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 40px;
+}
+.home-fotos img {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  object-fit: cover;
+}
+.home-fotos a {
+  padding: 10px 20px;
+  margin-top: 64px;
+  background: var(--grad2);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+@media (max-width: 1200px) {
+  .home-fotos {
+    padding-top: 80px;
+  }
+  .home-fotos img {
+    max-width: 30%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .home-fotos p {
+    text-align: center;
+  }
+  .home-fotos picture {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 250px;
+  }
+  .home-fotos img {
+    max-width: 100%;
+    height: 250px;
+  }
+  .home-fotos img:last-child {
+    grid-column: span 2;
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .home-fotos picture {
+    display: flex;
+    gap: 20px;
+    justify-content: start;
+  }
+  .home-fotos img {
+    width: 45%;
+  }
+  .home-fotos img:last-child {
+    display: none;
+  }
 }

@@ -56,3 +56,16 @@
     font-size: 16px;
   }
 }
+@media (max-width: 600px) {
+  .f2xl0 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .f1l {
+    font-size: 24px;
+  }
+  .f1xs2 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
