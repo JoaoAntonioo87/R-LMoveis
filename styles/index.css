@@ -1,3 +1,8 @@
+@import "./reset.css";
+@import "./global.css";
+@import "../components/header.css";
+@import "../components/container.css";
+@import "../components/formulario.css";
 @import "./home.css";
 @import "./index.css";
 @import "./moveis.css";
@@ -6,6 +11,3 @@
 @import "./referencias.css";
 @import "./tipografia.css";
 @import "./cores.css";
-@import "../components/header.css";
-@import "../components/container.css";
-@import "./reset.css";

@@ -19,3 +19,10 @@ ul,
 li {
   list-style: none;
 }
+
+input,
+textarea {
+  border-radius: 5px;
+  border: 2px solid var(--c2);
+  outline: none;
+}

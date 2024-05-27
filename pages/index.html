@@ -64,32 +64,35 @@
       </picture>
       <a href="#" class="f1l p8">Veja agora</a>
     </section>
-    <article>
-      <picture class="home-comentario">
-        <img src="../static/fotos-reduzidas/home/home-comentario.jpg" alt="">
-      </picture>
-      <div class="home-comentario-texto">
-        <img src="../static/icones/aspas-1.svg" alt="" class="home-comentario-detalhe">
-        <p class="f3 p6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet eu tortor quis semper. Nullam elementum egestas quam </p>
-        <img src="../static/icones/aspas-2.svg" alt="" class="home-comentario-detalhe">
-        <blockquote class="f3 c5">Fulano de tal</blockquote>
+    <article class="home-comentario">
+      <div class="container">
+        <picture class="home-comentario-foto">
+          <img src="../static/fotos-reduzidas/home/home-comentario.jpg" alt="" width="560" height="376">
+        </picture>
+        <div class="home-comentario-texto">
+          <img src="../static/icones/aspas-1.svg" alt="" class="home-comentario-detalhe">
+          <p class="f3 p6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet eu tortor quis semper. Nullam elementum egestas quam </p>
+          <img src="../static/icones/aspas-2.svg" alt="" class="home-comentario-detalhe">
+          <blockquote class="f3 c5">Fulano de tal</blockquote>
+        </div>
       </div>
     </article>
-    <section class="home-orcamento">
-      <h1 class="f2xl0 p9"></h1>
+    <section class="formulario-orcamento container">
+      <h1 class="f2xl0 p9">Orçamento</h1>
       <ul class="f1s c8">
         <li>(041) 9 9XXX-XXXX</li>
         <li>(041) 9XXX-XXXX</li>
         <li>contato@rlmoveis.com.br</li>
       </ul>
-      <form action="#">
+      <form action="#" class="f1xs1 c8">
         <label for="nome">Nome</label>
-        <input type="text" name="nome" id="nome">
+        <input class="f1xs1 c4" type="text" name="nome" id="nome" placeholder="Fulano de Tal">
         <label for="telefone">Telefone</label>
-        <input type="text" name="telefone" id="telefone">
-        <label for="email">Email</label><input type="email" name="email" id="email">
+        <input class="f1xs1 c4" type="text" name="telefone" id="telefone" placeholder="(41) 9 9XXX-XXXX">
+        <label for="email">Email</label>
+        <input class="f1xs1 c4" type="email" name="email" id="email" placeholder="email@email.com.br">
         <label for="descricao">Descrição</label>
-        <textarea name="descricao" id="descricao" cols="50" rows="10"></textarea>
+        <textarea class="f1xs1 c4" name="descricao" id="descricao" cols="50" rows="10" placeholder="Detalhe mais sobre o móvel"></textarea>
       </form>
       <a href="#" class="f1l p8">Enviar</a>
     </section>

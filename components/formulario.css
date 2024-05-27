@@ -1,0 +1,50 @@
+.formulario-orcamento {
+  display: grid;
+  gap: 60px;
+  margin-top: 80px;
+  justify-items: center;
+}
+
+.formulario-orcamento > ul {
+  display: flex;
+  gap: 28px;
+}
+
+.formulario-orcamento form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-self: stretch;
+}
+
+.formulario-orcamento input {
+  height: 24px;
+  grid-column: 1;
+  font-size: 20px;
+}
+
+.formulario-orcamento input:focus,
+.formulario-orcamento textarea:focus {
+  border: 2px outset var(--p5);
+}
+
+.formulario-orcamento label {
+  grid-column: 1;
+}
+
+.formulario-orcamento label + input,
+.formulario-orcamento textarea {
+  margin: 12px 0;
+  padding: 8px 20px;
+}
+
+.formulario-orcamento label[for="descricao"] {
+  grid-row: 1;
+  grid-column: 2;
+  margin-left: 60px;
+}
+.formulario-orcamento textarea {
+  margin-left: 60px;
+  grid-column: 2;
+  grid-row: 2 / 7;
+  resize: none;
+}
