@@ -1,5 +1,5 @@
 .f1xxl {
-  font: 600 128px "Montserrat";
+  font: 600 128px/128px "Montserrat";
   text-transform: uppercase;
 }
 
@@ -9,6 +9,9 @@
 
 .f2xl1 {
   font: 400 48px/1.25 "Jost";
+}
+.f2l {
+  font: 400 40px/1.2 "Jost";
 }
 
 .f1xl {
@@ -59,6 +62,21 @@
   .f1xs1 {
     font-size: 16px;
   }
+  .f1s {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .f1l {
+    font-size: 24px;
+  }
+  .f1xxl {
+    font-size: 80px;
+    line-height: 80px;
+  }
+  .f2l {
+    font-size: 28px;
+    line-height: 32px;
+  }
 }
 @media (max-width: 767px) {
   .f3 {
@@ -69,11 +87,17 @@
     font-size: 36px;
     line-height: 40px;
   }
-  .f1l {
-    font-size: 24px;
-  }
+
   .f1xs2 {
     font-size: 16px;
+    line-height: 20px;
+  }
+  .f2l {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .f1xs0 {
+    font-size: 14px;
     line-height: 20px;
   }
 }

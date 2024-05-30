@@ -60,7 +60,7 @@
     height: 40px;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1023px) {
   .header-fixo {
     display: none;
   }

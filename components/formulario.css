@@ -13,12 +13,9 @@
 .formulario-orcamento form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-self: stretch;
 }
 
 .formulario-orcamento input {
-  height: 24px;
-  grid-column: 1;
   font-size: 20px;
 }
 
@@ -31,10 +28,15 @@
   grid-column: 1;
 }
 
-.formulario-orcamento label + input,
-.formulario-orcamento textarea {
-  margin: 12px 0;
+.formulario-orcamento input {
   padding: 8px 20px;
+  margin: 12px 0 12px 0;
+}
+
+.formulario-orcamento textarea,
+.formulario-orcamento input[type="email"] {
+  padding: 8px 20px;
+  margin: 12px 0 0 0;
 }
 
 .formulario-orcamento label[for="descricao"] {
@@ -47,4 +49,34 @@
   grid-column: 2;
   grid-row: 2 / 7;
   resize: none;
+  font-size: 20px;
+}
+.formulario-orcamento > a {
+  background: var(--grad0);
+  padding: 17px 34px;
+  border-radius: 5px;
+}
+
+@media (max-width: 767px) {
+  .formulario-orcamento ul {
+    display: none;
+  }
+  .formulario-orcamento form {
+    grid-template-columns: 1fr;
+  }
+  .formulario-orcamento input {
+    font-size: 16px;
+  }
+  .formulario-orcamento label[for="descricao"] {
+    grid-column: 1;
+    margin-left: 0px;
+    grid-row: 8;
+  }
+
+  .formulario-orcamento textarea {
+    grid-column: 1;
+    margin-left: 0px;
+    grid-row: 9;
+    font-size: 16px;
+  }
 }
