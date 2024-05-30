@@ -1,0 +1,43 @@
+.moveis {
+  display: grid;
+  justify-items: center;
+}
+
+.moveis > h1 {
+  margin-top: 60px;
+}
+
+.moveis > p {
+  margin-top: 52px;
+}
+
+.moveis-quarto {
+  margin-top: 80px;
+}
+
+.moveis-segura-fotos {
+  display: flex;
+  margin-top: 32px;
+  gap: 40px;
+}
+
+.moveis-segura-fotos picture {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.moveis-segura-fotos img {
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .moveis-segura-fotos picture:last-child {
+    display: none;
+  }
+
+  .moveis-segura-fotos picture,
+  .moveis-segura-fotos img {
+    height: 50%;
+  }
+}
+
+/* //47:58 */
