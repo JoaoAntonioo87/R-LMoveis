@@ -1,10 +1,15 @@
 .home-introducao {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: 140px;
 }
 
 .home-introducao-foto {
   z-index: 0;
+}
+.home-introducao-foto {
+  justify-self: end;
 }
 .home-introducao-foto > img {
   object-fit: cover;
@@ -13,14 +18,10 @@
 .home-introducao-texto {
   display: grid;
   align-content: start;
+  justify-self: start;
+
   justify-items: center;
   margin-top: 80px;
-}
-
-@media (max-width: 767px) {
-  h1::after {
-    bottom: -6px;
-  }
 }
 
 .home-introducao-texto p {
