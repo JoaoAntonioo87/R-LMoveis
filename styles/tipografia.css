@@ -100,4 +100,9 @@
     font-size: 14px;
     line-height: 20px;
   }
+  .f2xl1 {
+    font-size: 40px;
+    line-height: 48px;
+    /* 48px 1.25? */
+  }
 }

@@ -11,33 +11,36 @@
   margin-top: 52px;
 }
 
-.moveis-quarto {
+.moveis-fotos {
+  margin-top: 64px;
+  display: grid;
+  justify-items: start;
+}
+
+.moveis-fotos h2:nth-child(1n + 2) {
   margin-top: 80px;
 }
 
 .moveis-segura-fotos {
   display: flex;
   margin-top: 32px;
-  gap: 40px;
-}
-
-.moveis-segura-fotos picture {
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  gap: 60px;
 }
 
 .moveis-segura-fotos img {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
   object-fit: cover;
 }
 
 @media (max-width: 767px) {
-  .moveis-segura-fotos picture:last-child {
-    display: none;
+  .moveis-segura-fotos {
+    flex-direction: column;
+    gap: 40px;
   }
 
   .moveis-segura-fotos picture,
   .moveis-segura-fotos img {
-    height: 50%;
+    height: calc(360px / 2);
   }
 }
-
-/* //47:58 */
