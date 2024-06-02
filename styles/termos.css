@@ -1,0 +1,30 @@
+.termos {
+  margin-top: 60px;
+  display: grid;
+  justify-items: start;
+}
+
+.termos h1::after {
+  width: 90%;
+  left: 0;
+}
+
+.termos ol {
+  margin-top: 20px;
+  display: grid;
+  gap: 16px;
+}
+
+.termos li {
+  list-style: inside;
+  list-style-type: decimal;
+}
+.termos span {
+  justify-self: center;
+  text-align: center;
+  margin-top: 64px;
+}
+
+#termos .footer {
+  margin-top: 80px;
+}
