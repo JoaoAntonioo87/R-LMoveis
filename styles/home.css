@@ -19,7 +19,6 @@
   display: grid;
   align-content: start;
   justify-self: start;
-
   justify-items: center;
   margin-top: 80px;
 }
@@ -47,6 +46,7 @@
   }
   .home-introducao-texto {
     margin-top: 32px;
+    justify-self: center;
   }
   .home-introducao-texto p {
     max-width: 40ch;
