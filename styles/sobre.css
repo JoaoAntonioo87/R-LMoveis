@@ -20,7 +20,6 @@
 }
 
 .sobre-intro img {
-  object-fit: cover;
   object-position: right bottom;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 27% 100%);
 }
@@ -56,23 +55,68 @@
   background-color: var(--p8);
 }
 
-.motivo1,
-.motivo2,
-.motivo3 {
+.sobre-motivos-item {
   display: grid;
   justify-items: center;
 }
 
-.motivo1 > div,
-.motivo2 > div,
-.motivo3 > div {
+.sobre-motivos-item > div {
   margin-top: 100px;
+  margin-bottom: 80px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: var(--p8);
+  align-items: start;
+  gap: 100px;
+}
+.sobre-motivos-item > div > div {
+  margin-top: 8px;
 }
 
-.motivo2,
-.motivo2 > div {
+.sobre-motivos-item img {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.sobre-motivos-item p {
+  margin-top: 32px;
+}
+
+#motivo2,
+#motivo2 > div {
   background-color: var(--c1);
+}
+
+@media (max-width: 1023px) {
+  .sobre-motivos {
+    margin-top: 64px;
+    padding-top: 64px;
+  }
+  .sobre-motivos-item > div {
+    gap: 60px;
+  }
+  .sobre-motivos-item > div > div {
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .sobre-motivos-item > div {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    gap: 24px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .sobre-motivos-item picture {
+    grid-row: 3;
+    height: 200px;
+  }
+  .sobre-motivos-item img {
+    height: 200px;
+  }
+
+  #motivo2 img {
+    object-position: bottom center;
+  }
 }

@@ -29,3 +29,7 @@ h2::after {
     bottom: -6px;
   }
 }
+
+img {
+  object-fit: cover;
+}

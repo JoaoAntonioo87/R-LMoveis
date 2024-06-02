@@ -96,13 +96,16 @@
     font-size: 24px;
     line-height: 28px;
   }
-  /* .f1xs0 {
-    font-size: 14px;
-    line-height: 20px;
-  } */
   .f2xl1 {
     font-size: 40px;
     line-height: 48px;
-    /* 48px 1.25? */
+  }
+  .f1xl {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .f1s {
+    font-size: 16px;
+    line-height: 20px;
   }
 }
